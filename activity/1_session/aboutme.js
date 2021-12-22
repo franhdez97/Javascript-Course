@@ -13,8 +13,10 @@ export const ejer3 = "Application, lighthouse y sources."
 
 //Ejercicio 4
 export const ejer4 = () => {
+    const element = document.querySelector("#ejer4");
     for(let i = 1; i <= 100; i++) {
         if(i % 7 == 0) {
+            element.innerHTML += `${i}, `;
             console.log(i);
         }
     }
@@ -22,3 +24,11 @@ export const ejer4 = () => {
 
 //Ejercicio 5
 export const ejer5 = "El atributo MODULE permite ejecutar código javascript de manera estricta, ya que por defecto esta desactivado.";
+
+//Ejercicio 6
+export const ejer6 = {
+    prefix: "Hello ",
+    append: function(str) {
+        return `${this.prefix}${str}`;
+    }
+};
